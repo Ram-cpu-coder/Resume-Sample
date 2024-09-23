@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.container-col1{
+    height: auto;
+    padding:10px 5px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 1fr 170px 197px 200px;
+    grid-template-areas: 
+    "img"
+    "contact"
+    "education"
+    "skill"
+    ;
+}
+
+.container-col2{
+    width: 75%;
+    height: auto;
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    padding:10px 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 85px 125px 1fr ;
+    grid-template-areas: 
+    "title"
+    "summary"
+    "work"
+    ;
+}
+
+.profile-img{
+    /* border: 2px solid red; */
+    grid-area: img;
+    height: 250px;
+    width: auto;
+    background: rgb(51 44 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-img img{
+    height: 85%;
+    width: 75%;
+    border: 4px solid white;
+    border-radius: 50px;
+}
+
+.contact{
+    /* border: 2px solid red; */
+    width: auto;
+    grid-area: contact;
+    background: rgb(51 44 102);
+    display: flex;
+    justify-content: center;
+}
+.contact-flex{
+    /* border: 2px solid blue; */
+    width: 75%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.contact hr{
+    width: 100%;
+}
+.contact a{
+    /* border: 2px solid red; */
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(157, 144, 144);
+   
+}
+
+
+.education{
+    /* border: 2px solid red; */
+    grid-area: education;
+    background: rgb(51 44 102);
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+.bachelor ul{
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.master ul{
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.education-flex{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* align-items: center; */
+}
+.education-flex hr{
+    width: 100%;
+}
+.education-flex .bachelor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    /* border: 2px solid blue; */
+}
+
+.education-flex .master{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+}
+
+
+.skill{
+    /* border: 2px solid red; */
+    grid-area: skill;
+    background: rgb(51 44 102);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-flex{
+    width: 75%;
+}
+.skill-flex hr{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.name-title{
+    /* height: 20%; */
+    /* border: 2px solid red; */
+    grid-area: title;
+}
+.summary{
+    /* border: 2px solid red; */
+    grid-area: summary;
+}
+.summary p{
+    margin-top: 10px;
+}
+.work{
+    /* border: 2px solid red; */
+    grid-area: work;
+}
+.work-flex{
+    display: flex;
+    flex-direction: column;
+}
+.first-work{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.first-work ul{
+    margin-left: 20px;
+}
+.second-work{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.second-work ul{
+    margin-left: 20px;
+}
+
