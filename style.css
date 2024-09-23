@@ -151,6 +151,9 @@
     width: 100%;
     margin-bottom: 10px;
 }
+.skill-flex ul{
+    margin-left: 20px;
+}
 
 .name-title{
     /* height: 20%; */
